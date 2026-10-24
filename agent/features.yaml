@@ -1,0 +1,14 @@
+# Amazon Bedrock AgentCore features for this agent.
+# ReturnGuard uses neither Memory nor Gateway; both are off.
+
+memory:
+  enabled: false
+  name: agentmemory
+  strategies: [SEMANTIC, USER_PREFERENCE]
+  expiry_days: 30
+
+gateway:
+  enabled: false
+  name: tools
+  authorizer: AWS_IAM
+  targets: []

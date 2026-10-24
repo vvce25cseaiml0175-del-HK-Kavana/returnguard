@@ -1,0 +1,15 @@
+{
+  "version": "v1",
+  "hooks": [
+    {
+      "name": "Next hackathon step",
+      "trigger": "Stop",
+      "description": "After each agent turn, print the next unfinished hackathon step so the 30-minute flow keeps moving.",
+      "action": {
+        "type": "command",
+        "command": ".\\kit.cmd status --next",
+        "timeout": 20
+      }
+    }
+  ]
+}

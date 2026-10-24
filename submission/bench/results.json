@@ -1,0 +1,341 @@
+{
+ "decider_model": "strands-decider-2b-hobson-v19",
+ "rows": [
+  {
+   "i": 0,
+   "expected": {
+    "category": "standard_return",
+    "violates_policy": "no",
+    "risk_level": "low"
+   },
+   "decider": {
+    "category": {
+     "label": "standard_return",
+     "confidence": 0.9273
+    },
+    "violates_policy": {
+     "label": "no",
+     "confidence": 0.8695
+    },
+    "risk_level": {
+     "label": "low",
+     "confidence": 0.3025
+    }
+   },
+   "decider_ms": 9464.04310001526,
+   "decider_server_ms": 7567.2,
+   "llm_error": "NotFoundError: Error code: 404 - {'error': {'code': 'model_not_found', 'message': \"model 'skip'; available: qwen3.5-4b, gpt-oss-20b\", 'type': 'model_not_found'}, 'id': 'chat_a004d30e9dbb41fb'}"
+  },
+  {
+   "i": 1,
+   "expected": {
+    "category": "standard_return",
+    "violates_policy": "yes",
+    "risk_level": "medium"
+   },
+   "decider": {
+    "category": {
+     "label": "standard_return",
+     "confidence": 0.9229
+    },
+    "violates_policy": {
+     "label": "no",
+     "confidence": 0.8532
+    },
+    "risk_level": {
+     "label": "low",
+     "confidence": 0.3005
+    }
+   },
+   "decider_ms": 8612.457100010943,
+   "decider_server_ms": 7466.0,
+   "llm_error": "NotFoundError: Error code: 404 - {'error': {'code': 'model_not_found', 'message': \"model 'skip'; available: qwen3.5-4b, gpt-oss-20b\", 'type': 'model_not_found'}, 'id': 'chat_52d44b35f8864724'}"
+  },
+  {
+   "i": 2,
+   "expected": {
+    "category": "high_value_return",
+    "violates_policy": "no",
+    "risk_level": "medium"
+   },
+   "decider": {
+    "category": {
+     "label": "standard_return",
+     "confidence": 0.8452
+    },
+    "violates_policy": {
+     "label": "no",
+     "confidence": 0.8092
+    },
+    "risk_level": {
+     "label": "low",
+     "confidence": 0.2871
+    }
+   },
+   "decider_ms": 8492.076500027906,
+   "decider_server_ms": 7461.8,
+   "llm_error": "NotFoundError: Error code: 404 - {'error': {'code': 'model_not_found', 'message': \"model 'skip'; available: qwen3.5-4b, gpt-oss-20b\", 'type': 'model_not_found'}, 'id': 'chat_5e624c2c2b404ec6'}"
+  },
+  {
+   "i": 3,
+   "expected": {
+    "category": "standard_return",
+    "violates_policy": "no",
+    "risk_level": "low"
+   },
+   "decider": {
+    "category": {
+     "label": "standard_return",
+     "confidence": 0.9141
+    },
+    "violates_policy": {
+     "label": "no",
+     "confidence": 0.8596
+    },
+    "risk_level": {
+     "label": "low",
+     "confidence": 0.2956
+    }
+   },
+   "decider_ms": 8357.087599986698,
+   "decider_server_ms": 7217.3,
+   "llm_error": "NotFoundError: Error code: 404 - {'error': {'code': 'model_not_found', 'message': \"model 'skip'; available: qwen3.5-4b, gpt-oss-20b\", 'type': 'model_not_found'}, 'id': 'chat_b9efe858f7bb4f47'}"
+  },
+  {
+   "i": 4,
+   "expected": {
+    "category": "standard_return",
+    "violates_policy": "no",
+    "risk_level": "low"
+   },
+   "decider": {
+    "category": {
+     "label": "standard_return",
+     "confidence": 0.8894
+    },
+    "violates_policy": {
+     "label": "no",
+     "confidence": 0.8369
+    },
+    "risk_level": {
+     "label": "low",
+     "confidence": 0.2887
+    }
+   },
+   "decider_ms": 11781.313999963459,
+   "decider_server_ms": 7018.4,
+   "llm_error": "NotFoundError: Error code: 404 - {'error': {'code': 'model_not_found', 'message': \"model 'skip'; available: qwen3.5-4b, gpt-oss-20b\", 'type': 'model_not_found'}, 'id': 'chat_2f10e20025b64347'}"
+  },
+  {
+   "i": 5,
+   "expected": {
+    "category": "repeat_returner",
+    "violates_policy": "no",
+    "risk_level": "medium"
+   },
+   "decider": {
+    "category": {
+     "label": "repeat_returner",
+     "confidence": 0.668
+    },
+    "violates_policy": {
+     "label": "no",
+     "confidence": 0.5428
+    },
+    "risk_level": {
+     "label": "medium",
+     "confidence": 0.242
+    }
+   },
+   "decider_ms": 9013.977800030261,
+   "decider_server_ms": 7534.8,
+   "llm_error": "NotFoundError: Error code: 404 - {'error': {'code': 'model_not_found', 'message': \"model 'skip'; available: qwen3.5-4b, gpt-oss-20b\", 'type': 'model_not_found'}, 'id': 'chat_cc08350a53074098'}"
+  },
+  {
+   "i": 6,
+   "expected": {
+    "category": "standard_return",
+    "violates_policy": "no",
+    "risk_level": "medium"
+   },
+   "decider": {
+    "category": {
+     "label": "standard_return",
+     "confidence": 0.8873
+    },
+    "violates_policy": {
+     "label": "no",
+     "confidence": 0.8147
+    },
+    "risk_level": {
+     "label": "low",
+     "confidence": 0.2842
+    }
+   },
+   "decider_ms": 8713.44180003507,
+   "decider_server_ms": 6918.4,
+   "llm_error": "NotFoundError: Error code: 404 - {'error': {'code': 'model_not_found', 'message': \"model 'skip'; available: qwen3.5-4b, gpt-oss-20b\", 'type': 'model_not_found'}, 'id': 'chat_9d6c5b21bd8e4dba'}"
+  },
+  {
+   "i": 7,
+   "expected": {
+    "category": "fraud_suspected",
+    "violates_policy": "yes",
+    "risk_level": "high"
+   },
+   "decider": {
+    "category": {
+     "label": "fraud_suspected",
+     "confidence": 0.3902
+    },
+    "violates_policy": {
+     "label": "no",
+     "confidence": 0.5761
+    },
+    "risk_level": {
+     "label": "medium",
+     "confidence": 0.2404
+    }
+   },
+   "decider_ms": 8666.193000040948,
+   "decider_server_ms": 7562.1,
+   "llm_error": "NotFoundError: Error code: 404 - {'error': {'code': 'model_not_found', 'message': \"model 'skip'; available: qwen3.5-4b, gpt-oss-20b\", 'type': 'model_not_found'}, 'id': 'chat_152e047ec9ec424f'}"
+  },
+  {
+   "i": 8,
+   "expected": {
+    "category": "fraud_suspected",
+    "violates_policy": "yes",
+    "risk_level": "critical"
+   },
+   "decider": {
+    "category": {
+     "label": "fraud_suspected",
+     "confidence": 0.4846
+    },
+    "violates_policy": {
+     "label": "yes",
+     "confidence": 0.5515
+    },
+    "risk_level": {
+     "label": "high",
+     "confidence": 0.2523
+    }
+   },
+   "decider_ms": 23118.829599989112,
+   "decider_server_ms": 8675.3,
+   "llm_error": "NotFoundError: Error code: 404 - {'error': {'code': 'model_not_found', 'message': \"model 'skip'; available: qwen3.5-4b, gpt-oss-20b\", 'type': 'model_not_found'}, 'id': 'chat_59d0f6c9a00d48cd'}"
+  },
+  {
+   "i": 9,
+   "expected": {
+    "category": "repeat_returner",
+    "violates_policy": "no",
+    "risk_level": "medium"
+   },
+   "decider": {
+    "category": {
+     "label": "repeat_returner",
+     "confidence": 0.5229
+    },
+    "violates_policy": {
+     "label": "no",
+     "confidence": 0.5295
+    },
+    "risk_level": {
+     "label": "medium",
+     "confidence": 0.2382
+    }
+   },
+   "decider_ms": 12945.378900039941,
+   "decider_server_ms": 11742.4,
+   "llm_error": "NotFoundError: Error code: 404 - {'error': {'code': 'model_not_found', 'message': \"model 'skip'; available: qwen3.5-4b, gpt-oss-20b\", 'type': 'model_not_found'}, 'id': 'chat_fd09bb2dd1154227'}"
+  },
+  {
+   "i": 10,
+   "expected": {
+    "category": "standard_return",
+    "violates_policy": "no",
+    "risk_level": "low"
+   },
+   "decider": {
+    "category": {
+     "label": "standard_return",
+     "confidence": 0.8947
+    },
+    "violates_policy": {
+     "label": "no",
+     "confidence": 0.8514
+    },
+    "risk_level": {
+     "label": "low",
+     "confidence": 0.2919
+    }
+   },
+   "decider_ms": 7776.677399990149,
+   "decider_server_ms": 6810.6,
+   "llm_error": "NotFoundError: Error code: 404 - {'error': {'code': 'model_not_found', 'message': \"model 'skip'; available: qwen3.5-4b, gpt-oss-20b\", 'type': 'model_not_found'}, 'id': 'chat_3ef6c9de74794337'}"
+  },
+  {
+   "i": 11,
+   "expected": {
+    "category": "standard_return",
+    "violates_policy": "no",
+    "risk_level": "low"
+   },
+   "decider": {
+    "category": {
+     "label": "standard_return",
+     "confidence": 0.914
+    },
+    "violates_policy": {
+     "label": "no",
+     "confidence": 0.7965
+    },
+    "risk_level": {
+     "label": "low",
+     "confidence": 0.2891
+    }
+   },
+   "decider_ms": 8531.275499961339,
+   "decider_server_ms": 7250.0,
+   "llm_error": "NotFoundError: Error code: 404 - {'error': {'code': 'model_not_found', 'message': \"model 'skip'; available: qwen3.5-4b, gpt-oss-20b\", 'type': 'model_not_found'}, 'id': 'chat_e638fa18a91a4969'}"
+  }
+ ],
+ "summary": {
+  "decider": {
+   "accuracy": 0.7778,
+   "decisions": 36,
+   "per_question": {
+    "category": 0.9167,
+    "violates_policy": 0.8333,
+    "risk_level": 0.5833
+   },
+   "latency_p50_ms": 8713.4,
+   "latency_p95_ms": 12945.4,
+   "usd_per_1k_decisions": 0.035,
+   "confident_share": 0.4444,
+   "accuracy_when_confident": 0.875,
+   "sent_to_human_at_threshold": 20
+  },
+  "llm": {
+   "accuracy": null,
+   "decisions": 0,
+   "per_question": {},
+   "latency_p50_ms": null,
+   "latency_p95_ms": null,
+   "usd_per_1k_decisions": 0.0,
+   "confident_share": null,
+   "accuracy_when_confident": null,
+   "sent_to_human_at_threshold": 0
+  }
+ },
+ "threshold": 0.7,
+ "llm_model": "skip",
+ "llm_provider": "ugmdu",
+ "llm_where": "AWS User Group Madurai cloud (skip)",
+ "decider_url": "https://da25tnxy06gjk.cloudfront.net",
+ "decider_mode": "ugmdu",
+ "ran_at": 1792821399.0143962,
+ "split": "test"
+}

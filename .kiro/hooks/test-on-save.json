@@ -1,0 +1,16 @@
+{
+  "version": "v1",
+  "hooks": [
+    {
+      "name": "Run the tests when agent or library code changes",
+      "trigger": "PostFileSave",
+      "description": "Unit tests run without network (a fake decider and no Bedrock calls), so they are fast enough to run on every save.",
+      "matcher": "(agent|decider_kit|scripts)/.*\\.py$",
+      "action": {
+        "type": "command",
+        "command": ".\\kit.cmd test -x",
+        "timeout": 120
+      }
+    }
+  ]
+}

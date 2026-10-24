@@ -1,0 +1,15 @@
+{
+  "version": "v1",
+  "hooks": [
+    {
+      "name": "Hackathon progress at session start",
+      "trigger": "SessionStart",
+      "description": "Shows which hackathon steps are done (setup, agent, bench, deploy, video, article, publish) so the agent and the participant know what is next.",
+      "action": {
+        "type": "command",
+        "command": ".\\kit.cmd status",
+        "timeout": 20
+      }
+    }
+  ]
+}

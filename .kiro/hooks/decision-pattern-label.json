@@ -1,0 +1,16 @@
+{
+  "version": "v1",
+  "hooks": [
+    {
+      "name": "Keep the decision pattern labelled",
+      "trigger": "PostFileSave",
+      "description": "When agent/decision.py changes, check it still carries the REUSABLE DECISION PATTERN header, a valid PATTERN_TAG and QUESTIONS (a judging requirement).",
+      "matcher": "agent/decision\\.py$",
+      "action": {
+        "type": "command",
+        "command": ".\\kit.cmd check --only pattern",
+        "timeout": 30
+      }
+    }
+  ]
+}

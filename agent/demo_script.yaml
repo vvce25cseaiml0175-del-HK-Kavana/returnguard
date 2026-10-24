@@ -1,0 +1,21 @@
+# What the demo video shows. Each turn is typed into the demo UI against your real agent.
+# `narrate` describes the situation only; make_video.py appends what the decider actually decided,
+# so the narration never claims something that did not happen. Keep it under about 2.5 minutes.
+title: "ReturnGuard: instant, intelligent return evaluation"
+pitch: "An e-commerce return agent that auto-approves legitimate returns, escalates borderline ones, and rejects fraud — powered by Strands Decider 2B."
+features:
+  - "look up customer accounts, return requests and fraud signals through chat"
+  - "classify every return against the store's return policy with Strands Decider 2B"
+  - "auto-approve, escalate to a human, or reject — with a live decision panel showing why"
+  - "run on Amazon Bedrock AgentCore Runtime"
+eager: true
+intro: "ReturnGuard evaluates e-commerce returns. For this demo it is told to act without asking, and Strands Decider 2B checks every return decision against the store's policy before it is submitted."
+intro_normal: "ReturnGuard runs on Amazon Bedrock AgentCore Runtime and evaluates e-commerce returns. Strands Decider 2B checks every return decision against the store's policy before it is submitted."
+turns:
+  - say: "I want to return my running shoes. Customer C001, return request RET001."
+    narrate: "A loyal customer with a clean history returns a defective item. This should be auto-approved."
+  - say: "Hi, I'd like to return my jacket. Customer C004, return RET004."
+    narrate: "This customer has 8 past returns and a high-value item. The decider should flag it for human review."
+  - say: "I want to return my smartwatch. Customer C006, return request RET006."
+    narrate: "A brand-new account with an address mismatch returning a high-value item. The decider should reject this for fraud risk."
+outro: "One forward pass per decision, typed answers with a confidence the code can branch on, and Amazon Bedrock for the conversation."
